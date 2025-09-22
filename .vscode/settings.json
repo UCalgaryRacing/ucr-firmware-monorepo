@@ -1,7 +1,0 @@
-{
-    "cmake.sourceDirectory": [
-        "${workspaceFolder}/applications/front_controller",
-        "${workspaceFolder}/applications/front_controller_cubemx",
-        "${workspaceFolder}/applications/barebones_test"
-    ]
-}
