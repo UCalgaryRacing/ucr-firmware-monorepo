@@ -1,0 +1,8 @@
+manifest:
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      path: external/zephyr
+      import: true
+  self:
+    path: external
