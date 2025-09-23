@@ -1,8 +1,15 @@
 manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
   projects:
     - name: zephyr
-      url: https://github.com/zephyrproject-rtos/zephyr
+      remote: zephyrproject-rtos
+      revision: main
       path: external/zephyr
-      import: true
+      import:
+        name-allowlist:
+          - cmsis_6    # required by the ARM port for Cortex-M
+          - hal_stm32  # STM32 HAL
   self:
     path: external
