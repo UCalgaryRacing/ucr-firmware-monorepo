@@ -1,0 +1,20 @@
+manifest:
+  defaults:
+    remote: zephyrproject-rtos
+    revision: main
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+  projects:
+    - name: zephyr
+      path: external/zephyr
+      import:
+        name-allowlist:
+          - cmsis_6
+          - hal_stm32
+    - name: cmsis_6
+      path: external/zephyr_modules/cmsis_6
+    - name: hal_stm32
+      path: external/zephyr_modules/hal_stm32
+  self:
+    path: manifest
