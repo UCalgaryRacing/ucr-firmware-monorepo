@@ -4,6 +4,7 @@
     "cmake.configureOnEdit": false,
     "cmake.options.statusBarVisibility": "icon",
     "python.terminal.activateEnvironment": false,
+    "python.useEnvironmentsExtension": true,
     "C_Cpp.default.compileCommands": [
         "${workspaceFolder}/build/compile_commands.json"
     ]
