@@ -7,6 +7,7 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
   projects:
     - name: zephyr
+      revision: v4.2.0
       path: external/zephyr
       import:
         name-allowlist:
