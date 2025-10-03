@@ -1,5 +1,4 @@
 # UCalgary Racing Firmware
-This repo will be used for all embedded firmware developed for UCalgary Racing vehicles going forward (starting in 2025-2026 season).
 
 [What is a "monorepo"?](https://monorepo.tools/#what-is-a-monorepo)
 
