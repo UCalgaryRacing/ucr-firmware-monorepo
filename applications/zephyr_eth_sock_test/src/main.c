@@ -23,7 +23,7 @@ LOG_MODULE_REGISTER(net_pkt_sock_sample, LOG_LEVEL_DBG);
 #define THREAD_PRIORITY K_PRIO_PREEMPT(8)
 #endif
 #define RECV_BUFFER_SIZE 1280
-#define WAIT_TIME 5000
+#define WAIT_TIME 500
 
 #define FLOOD (WAIT_TIME ? 0 : 1)
 
@@ -163,8 +163,7 @@ static int send_packet_socket(struct packet_data *packet)
 	if (IS_ENABLED(USE_PACKET_DGRAM)) {
 		dst.sll_halen = sizeof(struct net_eth_addr);
 
-		/* FIXME: assume IP data atm */
-		dst.sll_protocol = htons(ETH_P_IP);	// this sets the ethertype?
+		dst.sll_protocol = htons(0x88b5);	// Experimental ethertype
 
 		ret = net_bytes_from_str(
 			dst.sll_addr,
