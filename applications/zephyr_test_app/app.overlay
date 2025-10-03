@@ -1,0 +1,4 @@
+&mac {
+	local-mac-address = [02 69 69 69 69 69];
+};
+
