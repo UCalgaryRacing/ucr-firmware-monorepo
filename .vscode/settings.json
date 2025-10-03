@@ -1,11 +1,13 @@
 {
+    "C_Cpp.default.compileCommands": [
+        "${workspaceFolder}/build/compile_commands.json"    // Lets intellisense work properly with Zephyr (after building once)
+    ],
+    "python.terminal.activateEnvironment": false,           // prevent python extension from screwing with debug terminals
+    "python.terminal.activateEnvInCurrentTerminal": false,  // prevent python extension from screwing with debug terminals
+    "python-envs.terminal.autoActivationType": false,       // same reason as above, except this setting is user scope only for some reason. People will need to modify their user settings if they use this extension
     "cmake.autoSelectActiveFolder": false,
     "cmake.configureOnOpen": false,
     "cmake.configureOnEdit": false,
-    "cmake.options.statusBarVisibility": "icon",
-    "python.terminal.activateEnvironment": false,
-    "python.useEnvironmentsExtension": true,
-    "C_Cpp.default.compileCommands": [
-        "${workspaceFolder}/build/compile_commands.json"
-    ]
+    "git.detectSubmodules": false                           // prevents source control menu from being cluttered by STM32CubeH7 etc
+    
 }

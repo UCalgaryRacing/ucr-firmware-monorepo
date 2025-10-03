@@ -1,7 +1,5 @@
 {
     "recommendations": [
-        "ms-python.python",
-        "ms-python.vscode-python-envs",
         "ms-vscode.cpptools-extension-pack",
         "ms-vscode.vscode-serial-monitor",
         "ms-vscode.vscode-embedded-tools",
